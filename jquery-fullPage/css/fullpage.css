@@ -1,0 +1,50 @@
+/*section-wrap start*/
+body{
+	overflow: hidden;
+}
+.section-wrapper{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.section-wrap{
+	width: 100%;
+	height: 100%;
+	transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-webkit-transform: translateY(0%);
+	-o-transform: translateY(0%);
+}
+.section-wrap .section{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.section-animate{
+	transition: all 1s cubic-bezier(0.86, 0, 0.03, 1);
+    -moz-transition: all 1s cubic-bezier(0.86, 0, 0.03, 1);
+    -webkit-transition: all 1s cubic-bezier(0.86, 0, 0.03, 1);
+    -o-transition: all 1s cubic-bezier(0.86, 0, 0.03, 1);
+}
+.section-wrapper .serial{
+	position: absolute;
+	right: 5%;
+	top: 50%;
+}
+.section-wrapper .serial li a{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, .5);
+	background-color: rgba(255, 255, 255, .8);
+}
+.section-wrapper .serial li a:hover{
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid rgba(255, 255, 255, .8);
+}
+.section-wrapper .serial li.curr a{
+	background-color:rgb(177, 62, 62);
+}
+/*section-wrap end*/
